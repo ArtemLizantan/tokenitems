@@ -1,0 +1,102 @@
+.hero {
+    margin-top: 202px;
+    @media (max-width: $md2+px) {
+      margin-top: 20px;
+    }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1280px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__title {
+    background: linear-gradient(
+      103.59deg,
+      #54d6ff 13.23%,
+      #c275ff 56.28%,
+      #f36aff 91.95%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 147px;
+    line-height: 191px;
+    margin-bottom: 19px;
+    @media (max-width: 1520px) {
+      font-size: 100px;
+    }
+    @media (max-width: 1280px) {
+      text-align: center;
+    }
+    @media (max-width: $md4+px) {
+        font-size: 55px;
+        line-height: 72px;
+      }
+  }
+  &__subtitle {
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+    max-width: 780px;
+    margin-bottom: 24px;
+    @media (max-width: 1280px) {
+      text-align: center;
+      max-width: unset;
+    }
+    @media (max-width: $md4+px) {
+        font-size: 22px;
+        line-height: 27px;
+      }
+  }
+  &__text {
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #959595;
+    margin-bottom: 40px;
+    @media (max-width: 1280px) {
+      text-align: center;
+    }
+    @media (max-width: $md4+px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 1280px) {
+      justify-content: center;
+    }
+  }
+  &__button--first {
+    @extend %contact-button;
+  }
+  &__button--second {
+    @extend %buy-button;
+  }
+  &__rigth{
+    @media (max-width: 1280px) {
+      margin: 0 auto;
+      }
+  }
+  &__rigth-img {
+    @media (max-width: $md2+px) {
+      width: 500px;
+      height: auto;
+    }
+    @media (max-width: $md4+px) {
+      width: 256px;
+      height: 256px;
+    }
+    @media (max-width: 1280px) {
+        text-align: center;
+        max-width: unset;
+      }
+  }
+}

@@ -1,0 +1,169 @@
+.team {
+  // .team__body
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    @media(max-width:1368px){
+        display: none;
+    }
+  }
+
+  // .team__flex
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+  }
+
+  // .team__card
+
+  &__card {
+    width: 280px;
+    height: 426px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.8s ease-in-out;
+    &._hidein{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        height: 0;
+    }
+    @media(max-width: 1368px){
+        margin: 0 auto;
+    }
+    @media(max-width: $md4+px){
+        width: 130px;
+        height: auto;
+    }
+  }
+
+  // .team__card-body
+
+  &__card-body {
+  }
+
+  // .team__img
+
+  &__img {
+  }
+
+  // .team__card-title
+
+  &__card-title {
+    margin-top: 18.5px;
+  }
+
+  // .team__card-title-text
+
+  &__card-title-text {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    @media(max-width: $md4+px){
+        font-size: 12px;
+    }
+  }
+
+  // .team__card-subtitle
+
+  &__card-subtitle {
+    margin-top: 13px;
+  }
+
+  // .team__card-title-subtext
+
+  &__card-title-subtext {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #959595;
+    @media(max-width: $md4+px){
+        font-size: 9px;
+    }
+  }
+
+  // .team__icons
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  // .team__links
+
+  &__links {
+  }
+  &__block-button {
+    margin-top: 75px;
+  }
+
+  &__more {
+    border: 2px solid #ffffff;
+    border-radius: 50px 0px;
+    background: none;
+    padding: 18px 25px;
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+._icon-instagram {
+    @media(max-width: $md4+px){
+        &::before {
+            font-size: 11px;
+          }
+    }
+  &::before {
+    // font-size: 19px;
+  }
+  &:hover::before {
+    color: purple;
+  }
+}
+
+._icon-linkedIn {
+  &:hover::before {
+    color: purple;
+  }
+  @media(max-width: $md4+px){
+    &::before {
+        font-size: 11px;
+      }
+}
+}
+
+._icon-telegram {
+  &:hover::before {
+    color: purple;
+  }
+  @media(max-width: $md4+px){
+    &::before {
+        font-size: 11px;
+      }
+}
+}
+
+._icon-twitter {
+  &:hover::before {
+    color: purple;
+  }
+  @media(max-width: $md4+px){
+    &::before {
+        font-size: 11px;
+      }
+}
+}

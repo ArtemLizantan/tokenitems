@@ -1,0 +1,28 @@
+.second-card{
+    &__item{
+        width: 480px;
+        height: 283px;
+        @media(max-width:$md2+px){
+            width: 305px;
+            height: 215px;
+        }
+    }
+    &__body{
+        padding: 15px;
+    }
+    &__image{
+        margin-bottom: 19px;
+        @media(max-width: $md2+px){
+           width: 60px;
+           height: 60px;
+        }
+    }
+    &__text{
+        @media(max-width: $md2+px){
+            font-size: 12px;
+        }
+    }
+    &__swiper{
+        padding: 2px;
+    }
+}
