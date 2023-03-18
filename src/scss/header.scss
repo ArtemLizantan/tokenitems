@@ -1,18 +1,18 @@
 .header {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
   background: rgba(13, 13, 13, 0.2);
   height: 115px;
-  transition: transform .4s linear;
-  @media (max-width: 1570px){
+  transition: transform 0.4s linear;
+  @media (max-width: 1570px) {
     height: 200px;
   }
   @media (max-width: 1280px) {
-   height: 75px;
-}
+    height: 75px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   &__container {
     max-width: 1870px;
     padding: 0 15px;
@@ -33,11 +33,11 @@
       align-items: unset;
     }
   }
-  &__logo-img{
+  &__logo-img {
     @media (max-width: $md4+px) {
-       width: 120px;
-       height: 27px;
-      }
+      width: 120px;
+      height: 27px;
+    }
   }
   &__button--first {
     @extend %contact-button;
@@ -54,7 +54,12 @@
       left: -150%;
       width: 65%;
       height: 100vh;
-      background: linear-gradient(103.59deg, #86AFFE 13.23%, #A57AFF 53.2%, #FB84FF 91.95%);
+      background: linear-gradient(
+        103.59deg,
+        #86affe 13.23%,
+        #a57aff 53.2%,
+        #fb84ff 91.95%
+      );
       display: flex;
       flex-direction: column;
       padding-top: 10px;
@@ -211,9 +216,8 @@
   }
 }
 
-
 .header.hide {
-    @media (max-width: 1200px) {
-        transform: translateY(-150px);
-    }
+  @media (max-width: 1200px) {
+    transform: translateY(-150px);
+  }
 }

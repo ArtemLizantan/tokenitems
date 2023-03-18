@@ -6,8 +6,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    @media(max-width:1368px){
-        display: none;
+    @media (max-width: 1368px) {
+      display: none;
     }
   }
 
@@ -27,30 +27,67 @@
     position: relative;
     z-index: 10;
     transition: all 0.8s ease-in-out;
-    &._hidein{
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        height: 0;
+    &._hidein {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      height: 0;
     }
-    @media(max-width: 1368px){
-        margin: 0 auto;
+    @media (max-width: 1368px) {
+      margin: 0 auto;
     }
-    @media(max-width: $md4+px){
-        width: 130px;
-        height: auto;
+    @media (max-width: $md4+px) {
+      width: 130px;
+      height: auto;
+    }
+  }
+  &__swiper{
+    @media(min-width: 1368px){
+      display: none !important;
     }
   }
 
-  // .team__card-body
 
-  &__card-body {
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    width: 35px;
+    height: 45px;
+    position: absolute;
+    top: 25%;
+    z-index: 100;
+    @media(min-width: 1368px){
+      display: none;
+    }
+    @media (max-width: $md2+px) {
+      top: 33%;
+    }
+    @media (max-width: $md2+px) {
+      top: 33%;
+    }
+  }
+  &__swiper-button-prev {
+    left: 10px;
+    &::after {
+      content: "";
+      background: url("../img/first-page/team/prev.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 35px;
+      height: 45px;
+    }
+  }
+  &__swiper-button-next {
+    right: 0;
+    &::after {
+        content: "";
+        background: url("../img/first-page/team/next.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 35px;
+        height: 45px;
+    }
   }
 
-  // .team__img
-
-  &__img {
-  }
 
   // .team__card-title
 
@@ -66,8 +103,8 @@
     line-height: 28px;
     text-align: center;
     color: #ffffff;
-    @media(max-width: $md4+px){
-        font-size: 12px;
+    @media (max-width: $md4+px) {
+      font-size: 12px;
     }
   }
 
@@ -84,8 +121,8 @@
     line-height: 17px;
     text-align: center;
     color: #959595;
-    @media(max-width: $md4+px){
-        font-size: 9px;
+    @media (max-width: $md4+px) {
+      font-size: 9px;
     }
   }
 
@@ -103,9 +140,6 @@
 
   &__links {
   }
-  &__block-button {
-    margin-top: 75px;
-  }
 
   &__more {
     border: 2px solid #ffffff;
@@ -119,14 +153,24 @@
     font-size: 22px;
     line-height: 27px;
   }
-}
-
-._icon-instagram {
-    @media(max-width: $md4+px){
-        &::before {
-            font-size: 11px;
-          }
+  &__swiper-container{
+    padding: 0 52px;
+    position: relative;
+    @media (max-width: $md3+px) {
+      padding: 0 90px;
     }
+    @media (max-width: $md4+px) {
+      padding: 0 52px;
+    }
+  }
+
+}
+._icon-instagram {
+  @media (max-width: $md4+px) {
+    &::before {
+      font-size: 11px;
+    }
+  }
   &::before {
     // font-size: 19px;
   }
@@ -139,31 +183,33 @@
   &:hover::before {
     color: purple;
   }
-  @media(max-width: $md4+px){
+  @media (max-width: $md4+px) {
     &::before {
-        font-size: 11px;
-      }
-}
+      font-size: 11px;
+    }
+  }
 }
 
 ._icon-telegram {
   &:hover::before {
     color: purple;
   }
-  @media(max-width: $md4+px){
+  @media (max-width: $md4+px) {
     &::before {
-        font-size: 11px;
-      }
-}
+      font-size: 11px;
+    }
+  }
 }
 
 ._icon-twitter {
   &:hover::before {
     color: purple;
   }
-  @media(max-width: $md4+px){
+  @media (max-width: $md4+px) {
     &::before {
-        font-size: 11px;
-      }
+      font-size: 11px;
+    }
+  }
 }
-}
+
+

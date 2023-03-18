@@ -158,7 +158,10 @@
 }
 
 .card__swiper {
-  padding: 2px;
+  padding: 2px !important;
+  @media(min-width: 1368px){
+    display: none !important;
+  } 
 }
 
 img {

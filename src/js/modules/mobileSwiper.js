@@ -86,6 +86,10 @@ function teamSwiper() {
     const swiper = new Swiper(".team__swiper", {
       spaceBetween: 10,
       slidesPerView: 3,
+      navigation: {
+        nextEl: '.team__swiper-button-next',
+        prevEl: '.team__swiper-button-prev',
+      },
       breakpoints:{
         375: {
             slidesPerView: 2,
