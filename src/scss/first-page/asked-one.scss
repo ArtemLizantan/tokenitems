@@ -1,0 +1,125 @@
+.asked {
+  // .asked__body
+
+  &__body {
+  }
+
+  // .asked__flex
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    @media (max-width: 1280px) {
+      flex-direction: column;
+    }
+  }
+
+  // .asked__left
+
+  &__left {
+  }
+
+  // .asked__left-title
+
+  &__left-title {
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background: linear-gradient(143.85deg, #ffb78f 11.79%, #db73ff 85.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    @media (max-width: $md4+px) {
+        font-size: 30px;
+        line-height: 39px;
+      }
+  }
+
+  // .asked__img
+
+  &__img {
+  }
+
+  // .asked__rigth
+
+  &__rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.harmonic {
+  // .harmonic__body
+
+  &__body {
+    padding: 30px 0px 30px 20px;
+    background: #0d0d0d;
+    box-shadow: 2px 2px 20px 0px #ef39ff4d;
+    position: relative;
+    border-radius: 10px;
+    max-width: 780px;
+    width: 100%;
+    @media (max-width: 1280px) {
+      max-width: 600px;
+    }
+    @media (max-width: $md4+px) {
+      max-width: 305px;
+    }
+    &.active {
+      .harmonic__content {
+        opacity: 1;
+        overflow: visible;
+        height: 60px;
+        margin-top: 20px;
+      }
+    }
+    &::after{
+        content: '';
+        background: url("../../img/first-page/asked-one/plus.svg");
+        background-repeat: no-repeat;
+        height: 21px;
+        width: 21px;
+        position: absolute;
+        right: 25px;
+        top: 33px;
+    }
+  }
+
+  // .harmonic__title
+
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    color: #ffffff;
+    @media (max-width: $md4+px) {
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+  }
+
+  // .harmonic__subtitle
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 180%;
+    color: #959595;
+    max-width: 752px;
+    @media (max-width: $md4+px) {
+      font-size: 12px;
+    }
+  }
+}

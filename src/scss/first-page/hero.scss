@@ -1,5 +1,4 @@
 .hero {
-    margin-top: 202px;
     @media (max-width: $md2+px) {
       margin-top: 20px;
     }
@@ -86,6 +85,7 @@
       }
   }
   &__rigth-img {
+    max-width: unset;
     @media (max-width: $md2+px) {
       width: 500px;
       height: auto;

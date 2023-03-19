@@ -7,6 +7,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
 
+
 //burger
 import burger from "./modules/burger.js";
 
@@ -25,3 +26,5 @@ import { blogSwiper } from "./modules/mobileSwiper.js";
 import { secondCardSwiper } from "./modules/mobileSwiper.js";
 
 import { team } from "./modules/team.js";
+
+import {harmonic} from "./modules/harmonic.js"

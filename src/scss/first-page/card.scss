@@ -36,7 +36,7 @@
     gap: 40px;
   }
   &__body {
-    padding: 25px;
+    padding: 27px;
     @media (max-width: $md3+px) {
       padding: 13px;
     }
@@ -93,7 +93,7 @@
     span {
       color: purple;
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md4+px) {
       font-size: 24px;
     }
   }

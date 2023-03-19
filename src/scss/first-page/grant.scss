@@ -1,0 +1,10 @@
+.grant{
+    &__title{
+        max-width: 755px;
+    }
+    &__flex{
+        @media (max-width: 1280px) {
+            flex-direction: column;
+          }
+    }
+}

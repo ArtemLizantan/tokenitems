@@ -1,7 +1,7 @@
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
-  margin-top: 115px;
+  margin-top: 60px;
 
   @media (max-width: 1200px) {
     margin-top: 80px;
@@ -108,6 +108,10 @@ body {
 @import "first-page/hero";
 @import "first-page/card";
 @import "first-page/team";
+@import "first-page/play";
+@import "first-page/grant";
+@import "first-page/nft";
+@import "first-page/asked-one";
 @import "second-page/card2";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

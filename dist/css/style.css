@@ -1,7 +1,7 @@
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
-  margin-top: 115px;
+  margin-top: 60px;
 }
 @media (max-width: 1200px) {
   .main {
@@ -15,13 +15,13 @@ section {
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.eot?6z8dcy");
-  src: url("../fonts/icons.eot?6z8dcy#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?6z8dcy") format("truetype"), url("../fonts/icons.woff?6z8dcy") format("woff"), url("../fonts/icons.svg?6z8dcy#icons") format("svg");
+  src: url("../fonts/icons.eot?z24bmu");
+  src: url("../fonts/icons.eot?z24bmu#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?z24bmu") format("truetype"), url("../fonts/icons.woff?z24bmu") format("woff"), url("../fonts/icons.svg?z24bmu#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=_icon-]::before, [class*=" _icon-"]::before {
+[class^=_icon-], [class*=" _icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icons" !important;
   speak: never;
@@ -33,6 +33,21 @@ section {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-left-first::after {
+  content: "\e904";
+  color: #fff;
+}
+
+._icon-left-second::before {
+  content: "\e905";
+  color: #fff;
+}
+
+._icon-right-arrow:before {
+  content: "\e906";
+  color: #fff;
 }
 
 ._icon-instagram:before {
@@ -256,6 +271,7 @@ body._lock {
 }
 @media (max-width: 1280px) {
   .header {
+    background: rgba(13, 13, 13, 0.2);
     height: 75px;
     position: fixed;
     z-index: 100;
@@ -528,9 +544,6 @@ body._lock {
   }
 }
 
-.hero {
-  margin-top: 202px;
-}
 @media (max-width: 992px) {
   .hero {
     margin-top: 20px;
@@ -624,6 +637,9 @@ body._lock {
   .hero__rigth {
     margin: 0 auto;
   }
+}
+.hero__rigth-img {
+  max-width: unset;
 }
 @media (max-width: 992px) {
   .hero__rigth-img {
@@ -922,7 +938,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   gap: 40px;
 }
 .card__body {
-  padding: 25px;
+  padding: 27px;
 }
 @media (max-width: 768px) {
   .card__body {
@@ -992,7 +1008,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 .card__main-title span {
   color: purple;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .card__main-title {
     font-size: 24px;
   }
@@ -1257,6 +1273,316 @@ img {
 @media (max-width: 480px) {
   ._icon-twitter::before {
     font-size: 11px;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.marqee__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.marquee__block {
+  margin-top: 77px;
+}
+
+.categories__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .categories__flex {
+    flex-direction: column-reverse;
+  }
+}
+.categories__left {
+  margin-top: 120px;
+}
+.categories__left-top {
+  padding: 10px 56px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .categories__left-top {
+    padding: unset;
+  }
+}
+.categories__title {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 110px;
+  letter-spacing: -0.02em;
+  color: white;
+  margin-bottom: 25px;
+  max-width: 678px;
+}
+.categories__title span {
+  background: linear-gradient(145.54deg, #7673ff 10.4%, #42f4ff 92.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media (max-width: 1570px) {
+  .categories__title {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .categories__title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+.categories__left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.categories__subtitle {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  max-width: 673px;
+  margin-bottom: 50px;
+}
+@media (max-width: 480px) {
+  .categories__subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1570px) {
+  .categories__subtitle {
+    text-align: center;
+  }
+}
+.categories__button {
+  border-radius: 60px 0px;
+  border: 2px solid #ffffff;
+  padding: 22px 27px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  color: #ffffff;
+  position: relative;
+  background: none;
+}
+@media (max-width: 480px) {
+  .categories__button {
+    padding: 8px 50px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1570px) {
+  .categories__rigth {
+    margin: 0 auto;
+    width: unset;
+  }
+}
+.categories__left-bottom {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-top: 25px;
+}
+@media (max-width: 1570px) {
+  .categories__left-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.categories__line-wrapper {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  flex-direction: column;
+  position: relative;
+}
+.categories__line-wrapper::before {
+  content: "PRODUCT 02";
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  color: #ffffff;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -130px;
+  bottom: 30px;
+}
+@media (max-width: 480px) {
+  .categories__line-wrapper::before {
+    right: -50px;
+    bottom: 17px;
+    font-size: 10px;
+  }
+}
+.categories__line-one {
+  border-bottom: 1px solid #fff;
+  border-bottom-style: dashed;
+  width: 400px;
+}
+@media (max-width: 480px) {
+  .categories__line-one {
+    width: 283px;
+  }
+}
+.categories__line-two {
+  border-bottom: 1px solid #fff;
+  width: 400px;
+}
+@media (max-width: 480px) {
+  .categories__line-two {
+    width: 283px;
+  }
+}
+
+._icon-left-second::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 70px;
+}
+@media (max-width: 480px) {
+  ._icon-left-second::before {
+    font-size: 11px;
+  }
+}
+
+._icon-left-first::after {
+  position: absolute;
+  left: -5px;
+  bottom: -50px;
+  font-size: 70px;
+}
+@media (max-width: 992px) {
+  ._icon-left-first::after {
+    bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  ._icon-left-first::after {
+    font-size: 11px;
+    bottom: 0;
+  }
+}
+
+.grant__title {
+  max-width: 755px;
+}
+@media (max-width: 1280px) {
+  .grant__flex {
+    flex-direction: column;
+  }
+}
+
+.asked__flex {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+@media (max-width: 1280px) {
+  .asked__flex {
+    flex-direction: column;
+  }
+}
+.asked__left-title {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background: linear-gradient(143.85deg, #ffb78f 11.79%, #db73ff 85.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media (max-width: 480px) {
+  .asked__left-title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+.asked__rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.harmonic__body {
+  padding: 30px 0px 30px 20px;
+  background: #0d0d0d;
+  box-shadow: 2px 2px 20px 0px rgba(239, 57, 255, 0.3019607843);
+  position: relative;
+  border-radius: 10px;
+  max-width: 780px;
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .harmonic__body {
+    max-width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .harmonic__body {
+    max-width: 305px;
+  }
+}
+.harmonic__body.active .harmonic__content {
+  opacity: 1;
+  overflow: visible;
+  height: 60px;
+  margin-top: 20px;
+}
+.harmonic__body::after {
+  content: "";
+  background: url("../../img/first-page/asked-one/plus.svg");
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  right: 25px;
+  top: 33px;
+}
+.harmonic__title {
+  font-size: 28px;
+  line-height: 34px;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .harmonic__title {
+    font-size: 14px;
+  }
+}
+.harmonic__content {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+.harmonic__subtitle {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  color: #959595;
+  max-width: 752px;
+}
+@media (max-width: 480px) {
+  .harmonic__subtitle {
+    font-size: 12px;
   }
 }
 
