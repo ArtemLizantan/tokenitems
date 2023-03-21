@@ -1,10 +1,40 @@
-.grant{
-    &__title{
-        max-width: 755px;
+.grant {
+  &__title {
+    span {
+      background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
     }
-    &__flex{
-        @media (max-width: 1280px) {
-            flex-direction: column;
+  }
+  &__flex {
+    @media (max-width: 1280px) {
+      flex-direction: column;
+    }
+  }
+  &__button {
+    border-radius: 60px 0;
+    transition: all 0.4s ease;
+    @media(min-width:$md2+px){
+        &:hover{
+            background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
           }
     }
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 60px 0;
+        padding: 10px;
+        border: 3px solid transparent;
+        color: #fff;
+        background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+    
+  }
 }

@@ -1,0 +1,35 @@
+.nft {
+  &__button {
+    border-radius: 60px 0;
+    transition: all 0.4s ease;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background: linear-gradient(144.66deg, #ff6c56 6.96%, #ff9344 88.16%),
+          linear-gradient(0deg, #ffffff, #ffffff);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 60px 0;
+      padding: 10px;
+      border: 3px solid transparent;
+      color: #fff;
+      background: linear-gradient(144.66deg, #ff6c56 6.96%, #ff9344 88.16%);
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
+  &__title{
+    span{
+        background: linear-gradient(144.66deg, #FF6C56 6.96%, #FF9344 88.16%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+  }
+}

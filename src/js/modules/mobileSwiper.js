@@ -47,12 +47,12 @@ function secondCardSwiper() {
     slidesPerView: 3,
     breakpoints: {
       375: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         centeredSlides: true,
-        spaceBetween: 40,
+        
       },
       468: {
-        slidesPerView: 1.3,
+        slidesPerView: 1.5,
         centeredSlides: true,
         spaceBetween: 40,
       },

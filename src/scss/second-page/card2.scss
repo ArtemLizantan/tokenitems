@@ -1,10 +1,16 @@
 .second-card{
+    position: relative;
+    top: -50px;
     &__item{
         width: 480px;
         height: 283px;
         @media(max-width:$md2+px){
             width: 305px;
             height: 215px;
+        }
+        @media(max-width:$md4+px){
+            width: 238px;
+            height: 219px;
         }
     }
     &__body{
@@ -24,5 +30,14 @@
     }
     &__swiper{
         padding: 2px;
+    }
+    &__container-mobile{
+        @media(max-width: 1280px){
+          padding: 0 130px;
+        }
+        @media(max-width: $md2+px){
+            margin-top: 140px;
+            padding: 0 15px;
+        }
     }
 }

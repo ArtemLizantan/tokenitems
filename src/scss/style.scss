@@ -1,7 +1,7 @@
 .main {
   min-height: calc(100vh - 513px);
   flex: 1 1 auto;
-  margin-top: 60px;
+  margin-bottom: 162px;
 
   @media (max-width: 1200px) {
     margin-top: 80px;
@@ -49,11 +49,13 @@ $bigcontainer: 1920;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 
+
 body {
   font-family: $Montserrat;
   font-weight: 500;
   font-size: 17px;
   background: #000000;
+  overflow-x: hidden;
   &._lock {
     overflow-y: hidden;
     position: fixed;
@@ -112,7 +114,10 @@ body {
 @import "first-page/grant";
 @import "first-page/nft";
 @import "first-page/asked-one";
+@import "first-page/social";
+@import "first-page/contact";
 @import "second-page/card2";
+@import "second-page/hero-second";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 

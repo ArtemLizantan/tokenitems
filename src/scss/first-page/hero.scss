@@ -1,7 +1,7 @@
 .hero {
-    @media (max-width: $md2+px) {
-      margin-top: 20px;
-    }
+  @media (max-width: $md2+px) {
+    margin-top: 20px;
+  }
   &__body {
     display: flex;
     justify-content: space-between;
@@ -32,9 +32,9 @@
       text-align: center;
     }
     @media (max-width: $md4+px) {
-        font-size: 55px;
-        line-height: 72px;
-      }
+      font-size: 55px;
+      line-height: 72px;
+    }
   }
   &__subtitle {
     font-size: 48px;
@@ -47,9 +47,9 @@
       max-width: unset;
     }
     @media (max-width: $md4+px) {
-        font-size: 22px;
-        line-height: 27px;
-      }
+      font-size: 22px;
+      line-height: 27px;
+    }
   }
   &__text {
     font-size: 37px;
@@ -57,13 +57,14 @@
     font-weight: 400;
     color: #959595;
     margin-bottom: 40px;
+    max-width: 810px;
     @media (max-width: 1280px) {
       text-align: center;
     }
     @media (max-width: $md4+px) {
-        font-size: 20px;
-        line-height: 24px;
-      }
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &__buttons {
     display: flex;
@@ -79,24 +80,17 @@
   &__button--second {
     @extend %buy-button;
   }
-  &__rigth{
+  &__rigth {
+    width: 645px;
+
     @media (max-width: 1280px) {
       margin: 0 auto;
-      }
+    }
+    @media(max-width: $md4+px){
+      width: 256px;
+    }
   }
   &__rigth-img {
-    max-width: unset;
-    @media (max-width: $md2+px) {
-      width: 500px;
-      height: auto;
-    }
-    @media (max-width: $md4+px) {
-      width: 256px;
-      height: 256px;
-    }
-    @media (max-width: 1280px) {
-        text-align: center;
-        max-width: unset;
-      }
+    width: 645px;
   }
 }

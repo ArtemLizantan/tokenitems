@@ -1,0 +1,166 @@
+.social {
+  &-section {
+    padding: 109px 0 140px 0px;
+  }
+  &__bg-wrap {
+    text-align: center;
+    position: relative;
+  }
+
+  &__bg {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__container {
+    max-width: 1256px;
+    margin: 0 auto;
+  }
+
+  &__bg-img {
+    max-width: 100%;
+  }
+
+  &__bg-mask {
+    position: absolute;
+    left: -14px;
+    bottom: -68px;
+    z-index: 100;
+  }
+
+  &__title {
+    margin-bottom: 367px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__item {
+    position: absolute;
+    z-index: 5;
+
+    &.linkedin {
+      top: -54%;
+      left: 52%;
+    }
+
+    &.discord {
+      top: -36%;
+      left: 27%;
+    }
+
+    &.reddit {
+      top: -2%;
+      left: 44%;
+    }
+
+    &.telegram {
+      top: 5%;
+      left: 19%;
+    }
+
+    &.twitter {
+      top: 9%;
+      left: 64%;
+    }
+
+    &.instagram {
+      top: 46%;
+      left: 26%;
+    }
+  }
+
+  &__item-link {
+    pointer-events: auto;
+
+    &:hover {
+      .social__item-icon {
+        transform: scale3d(1.2, 1.2, 1.2);
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@media(max-width:$md2+px){
+    .social{
+
+        &__item {
+            &.instagram {
+                top: 37%;
+                left: 26%;
+            }
+            &.twitter {
+              top: -3%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    display: flex;
+    justify-content: center;
+    order: 7;
+
+    &__container {
+      max-width: 540px;
+    }
+
+    &__item {
+      &.instagram {
+        top: 40%;
+      }
+      &.twitter {
+        top: 7%;
+      }
+    }
+    &__bg-mask{
+        left: -10px;
+        bottom: -28px;
+    }
+  }
+
+  .social {
+    &-section {
+      padding-bottom: 48px;
+    }
+
+    &__item {
+      &-icon {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .social {
+    &__item {
+      &-icon {
+        width: 67px;
+      }
+    }
+
+    &__title {
+      font-size: 21px;
+      line-height: 27px;
+      margin-bottom: 112px;
+    }
+
+    &__bg {
+      padding: 0 20px;
+    }
+
+    &__bg-mask {
+      bottom: -12%;
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+  }
+}

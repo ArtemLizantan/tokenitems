@@ -14,11 +14,15 @@
 	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
-		"gulp-cli": "^2.3.0"
+		"bootstrap": "^5.2.0-beta1",
+		"countup.js": "^2.3.2",
+		"gulp-cli": "^2.3.0",
+		"jquery": "^3.6.1",
+		"slick-carousel": "^1.8.1"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
-		"del": "^7.0.0",
+		"del": "latest",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
@@ -27,6 +31,7 @@
 		"gulp-group-css-media-queries": "latest",
 		"gulp-if": "latest",
 		"gulp-imagemin": "latest",
+		"gulp-inject": "^5.0.5",
 		"gulp-newer": "latest",
 		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
@@ -42,11 +47,12 @@
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
+		"mixitup": "^3.3.1",
 		"sass": "latest",
-		"swiper": "^9.1.1",
+		"swiper": "^8.4.2",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
-		"webpack": "latest",
-		"webpack-stream": "latest"
+		"webpack": "^5.74.0",
+		"webpack-stream": "^7.0.0"
 	}
 }

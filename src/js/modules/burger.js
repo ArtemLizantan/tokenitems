@@ -15,4 +15,4 @@ function burger() {
   });
 }
 
-export default burger;
+burger()

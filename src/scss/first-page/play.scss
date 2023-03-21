@@ -21,14 +21,10 @@
 
   &__left {
     margin-top: 120px;
-    // @media (max-width: 1570px) {
-    //   margin: 0 auto;
-    //   width: unset;
-    // }
+    width: 50%;
   }
 
   &__left-top {
-    padding: 10px 56px;
     position: relative;
     @media (max-width: $md4+px) {
       padding: unset;
@@ -46,7 +42,7 @@
     letter-spacing: -0.02em;
     color: #ffff;
     margin-bottom: 25px;
-    max-width: 678px;
+    padding-left: 62px;
     span {
       background: linear-gradient(145.54deg, #7673ff 10.4%, #42f4ff 92.38%);
       -webkit-background-clip: text;
@@ -57,10 +53,15 @@
     @media (max-width: 1570px) {
       text-align: center;
     }
+    @media (max-width: $md2+px) {
+      width: 100%;
+      padding-left: 0;
+    }
     @media (max-width: $md4+px) {
       font-size: 30px;
       line-height: 50px;
     }
+    
   }
 
   // categories__subtitle
@@ -68,6 +69,10 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 50%;
+    @media (max-width: $md2+px) {
+      width: 100%;
+    }
   }
 
   &__subtitle {
@@ -77,6 +82,11 @@
     color: #fff;
     max-width: 673px;
     margin-bottom: 50px;
+    padding-left: 62px;
+    @media (max-width: $md2+px) {
+      width: 100%;
+      padding-left: 0;
+    }
     @media (max-width: $md4+px) {
       font-size: 13px;
       margin-bottom: 20px;
@@ -89,24 +99,39 @@
   // categories__button
 
   &__button {
-    border-radius: 60px 0px;
-    border: 2px solid #ffffff;
-    padding: 22px 27px;
-    font-weight: 600;
-    font-size: 27px;
-    line-height: 33px;
-    color: #ffffff;
-    position: relative;
-    background: none;
-    @media (max-width: $md4+px) {
-      padding: 8px 50px;
-      font-size: 13px;
+    @extend %caregories-button;
+    border-radius: 60px 0;
+    transition: all 0.4s ease;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background: linear-gradient(145.54deg, #7673ff 10.4%, #42f4ff);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 60px 0;
+      padding: 10px;
+      border: 3px solid transparent;
+      color: #fff;
+      background: linear-gradient(
+        103.59deg,
+        #54d6ff 13.23%,
+        #c275ff 56.28%,
+        #f36aff 91.95%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
     }
   }
 
   // categories__rigth
 
   &__rigth {
+    width: 50%;
     @media (max-width: 1570px) {
       margin: 0 auto;
       width: unset;
@@ -145,7 +170,7 @@
       color: #ffffff;
       transform: rotate(90deg);
       position: absolute;
-      right: -130px;
+      right: -100px;
       bottom: 30px;
       @media (max-width: $md4+px) {
         right: -50px;
@@ -188,8 +213,8 @@
 ._icon-left-first {
   &::after {
     position: absolute;
-    left: -5px;
-    bottom: -50px;
+    left: 0px;
+    bottom: 0px;
     font-size: 70px;
   }
   @media (max-width: $md2+px) {

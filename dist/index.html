@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="iconsFont.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet"
@@ -18,20 +20,25 @@
   <div class="_container header__container">
     <div class="header__body">
       <div class="header__logo">
-        <a href="#"><img class="header__logo-img" src="img/first-page/logo.svg" alt="logo" /></a>
+        <a href="#"
+          ><img
+            class="header__logo-img"
+            src="img/first-page/logo.svg"
+            alt="logo"
+        /></a>
       </div>
       <div class="header__buttons">
         <nav class="header__menu menu">
           <div class="menu__items">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Home</a>
+                <a class="menu__list-link" href="index.html">Home</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Marketplace</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Token</a>
+                <a class="menu__list-link" href="token.html">Token</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Fund</a>
@@ -39,11 +46,12 @@
             </ul>
             <div class="header__dropdown dropdown">
               <div class="dropdown__body">
-            
-               <select class="select" name="select" id="">
-                <option class="select__option" value="value1"selected>EN</option>
-                <option class="select__option" value="value2">RU</option>
-               </select>
+                <select class="select" name="select" id="">
+                  <option class="select__option" value="value1" selected>
+                    EN
+                  </option>
+                  <option class="select__option" value="value2">RU</option>
+                </select>
               </div>
             </div>
           </div>
@@ -77,7 +85,7 @@
                 </div>
             </div>
             <div class="hero__rigth">
-                <img class="hero__rigth-img" src="img/first-page/hero/coin.png" alt="">
+                <img class="hero__rigth-img" src="img/first-page/hero/coin1.svg" alt="">
             </div>
         </div>
     </div>
@@ -259,7 +267,7 @@
   <div class="_container">
     <div class="categories__body">
       <div class="categories__flex grant__flex">
-        <div class="categories__rigth">
+        <div class="categories__rigth ">
             <img
               class="categories__img"
               src="img/first-page/grant/fund.svg"
@@ -276,7 +284,7 @@
             </p>
           </div>
           <div class="categories__left-bottom">
-            <button href="#" class="categories__button">Find out more</button>
+            <a href="#" class="categories__button grant__button">Find out more</a>
             <div class="categories__line-wrapper">
               <div class="categories__line-one"></div>
               <div class="categories__line-two"></div>
@@ -288,11 +296,13 @@
   </div>
 </section>
 
-			<section class="categories">
+			<section class="categories play">
   <div class="_container">
     <div class="categories__body">
       <div class="categories__flex">
-        <div class="categories__left-wrapper">
+        <div
+          class="categories__left-wrapper"
+        >
           <div class="categories__left-top _icon-left-first _icon-left-second">
             <h2 class="categories__title">
               Play <span> games</span> of the <span> Future</span>
@@ -305,14 +315,18 @@
             </p>
           </div>
           <div class="categories__left-bottom">
-            <button href="#" class="categories__button">Find out more</button>
+            <a href="#" class="categories__button play__button"
+              >Find out more</a
+            >
             <div class="categories__line-wrapper">
               <div class="categories__line-one"></div>
               <div class="categories__line-two"></div>
             </div>
           </div>
         </div>
-        <div class="categories__rigth">
+        <div
+          class="categories__rigth"
+        >
           <img
             class="categories__img"
             src="img/first-page/play/joystick.svg"
@@ -324,20 +338,20 @@
   </div>
 </section>
 
-			<section class="categories grant">
+			<section class="categories nft">
     <div class="_container">
       <div class="categories__body">
         <div class="categories__flex grant__flex">
-          <div class="categories__rigth">
+          <div class="categories__rigth wow animate__animated animate__slideInLeft">
               <img
                 class="categories__img"
                 src="img/first-page/nft/market.svg"
                 alt=""
               />
             </div>
-          <div class="categories__left-wrapper">
+          <div class="categories__left-wrapper wow animate__animated animate__backInRight">
             <div class="categories__left-top _icon-left-first _icon-left-second">
-              <h2 class="categories__title grant__title">Get <span>grant </span>from  <span>Finity Foundation</span></h2>
+              <h2 class="categories__title nft__title">Trade <span>NFT</span> with a new <span>Marketplace</span> </h2>
               <p class="categories__subtitle">
                 We engage Web 3.0 developers to improve the Finnity Touch
                 ecosystem. Finity Touch is ready to support your unique ideas,
@@ -345,7 +359,7 @@
               </p>
             </div>
             <div class="categories__left-bottom">
-              <button href="#" class="categories__button">Find out more</button>
+              <a href="#" class="categories__button nft__button">Find out more</a>
               <div class="categories__line-wrapper">
                 <div class="categories__line-one"></div>
                 <div class="categories__line-two"></div>
@@ -892,7 +906,7 @@
   <div class="_container">
     <div class="asked__body">
       <div class="asked__flex">
-        <div class="asked__left">
+        <div class="asked__left  wow animate__animated animate__backInLeft">
           <h2 class="asked__left-title">Frequently Asked Questions</h2>
           <img
             class="asked__img"
@@ -900,7 +914,7 @@
             alt=""
           />
         </div>
-        <div class="asked__rigth harmonic">
+        <div class="asked__rigth harmonic  wow animate__animated animate__fadeInRight">
           <div class="harmonic__body">
             <div class="harmonic__title">What is Finity Touch?</div>
             <div class="harmonic__content">
@@ -931,12 +945,165 @@
   </div>
 </section>
 
+			<section class="social social-section">
+  <div class="container social__container">
+    <h3 class="social__title title-s">Follow Us On Social Media</h3>
+
+    <div class="social__bg">
+      <div class="social__bg-wrap">
+        <img
+          src="img/first-page/social/base.png"
+          alt="phone"
+          class="social__bg-img"
+        />
+        <img
+          src="img/first-page/social/mask.png"
+          alt="phone"
+          class="social__bg-mask"
+        />
+      </div>
+
+      <ul class="social__list">
+        <li class="social__item linkedin">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_linkedin.png"
+              alt="linkedin"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+        <li class="social__item discord">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_discord.png"
+              alt="discord"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+        <li class="social__item reddit">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_reddit.png"
+              alt="reddit"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+        <li class="social__item telegram">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_telegram.png"
+              alt="telegram"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+        <li class="social__item twitter">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_twitter.png"
+              alt="twitter"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+        <li class="social__item instagram">
+          <a href="#" class="social__item-link">
+            <img
+              src="img/first-page/social/token_instagram.png"
+              alt="instagram"
+              class="social__item-icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+			<section class="contact">
+  <div class="_container">
+    <div class="contact__body">
+      <div class="contact__title">Contact Us</div>
+      <div class="contact__wrapper-form">
+        <form action="" class="contact__form">
+          <div class="contact__input-wrapper">
+            <input class="contact__input" type="text" placeholder="Name" />
+          </div>
+          <div class="contact__input-wrapper">
+            <input class="contact__input" type="email" placeholder="Mail" />
+          </div>
+          <div class="contact__input-wrapper">
+            <input
+              class="contact__input"
+              type="text"
+              placeholder="Your message"
+            />
+          </div>
+          <a href="#" class="contact__button">Send</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 		</main>
 		<footer class="footer">
-    <div class="_container">
-        
+  <div class="_container footer__container">
+    <div class="footer__body">
+      <div class="footer__buttons">
+        <nav class="footer__menu menu">
+            <div class="footer__logo-mobile">
+                <img src="img/first-page/logo.svg" alt="logo" />
+              </div>
+          <div class="footer__item menu__items">
+            <ul class="menu__list">
+              <li class="footer__menu-list-item menu__list-item">
+                <a class="menu__list-link" href="#">Home</a>
+              </li>
+              <li class="footer__menu-list-item menu__list-item">
+                <a class="menu__list-link" href="#">Marketplace</a>
+              </li>
+              <li class="footer__menu-list-item menu__list-item">
+                <a class="menu__list-link" href="#">Token</a>
+              </li>
+              <li class="footer__menu-list-item menu__list-item">
+                <a class="menu__list-link" href="#">Fund</a>
+              </li>
+            </ul>
+            <div class="footer__dropdown dropdown">
+              <div class="footer__dropdown dropdown__body">
+                <select class="select" name="select" id="">
+                  <option class="select__option" value="value1" selected>
+                    EN
+                  </option>
+                  <option class="select__option" value="value2">RU</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="footer__button-items">
+            <button class="header__button--first">Contact Us</button>
+            <button class="header__button--second">Buy Token</button>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__logo-pc">
+          <img src="img/first-page/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__text">
+          This website is maintained by Tihon Belenkiy. The contents and
+          opinions of this website are those of Finity Touch. Finity Touch
+          provides links to cryptocurrency exchanges as a service to the public
+        </div>
+      </div>
     </div>
+  </div>
 </footer>
-		<script src="js/app.min.js"></script>
+
+		<script src="js/app.min.js" defer></script>
 	</body>
 </html>

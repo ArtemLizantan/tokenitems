@@ -2,22 +2,12 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
-/*
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
-*/
-
-
 //burger
-import burger from "./modules/burger.js";
-
-burger();
+import { burger } from "./modules/burger.js";
 
 //header
 
-import header from "./modules/header.js";
-
-header();
+import { header } from "./modules/header.js";
 
 //mobileSwiper
 
@@ -27,4 +17,4 @@ import { secondCardSwiper } from "./modules/mobileSwiper.js";
 
 import { team } from "./modules/team.js";
 
-import {harmonic} from "./modules/harmonic.js"
+import { harmonic } from "./modules/harmonic.js";

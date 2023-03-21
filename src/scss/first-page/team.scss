@@ -11,6 +11,12 @@
     }
   }
 
+  &__img{
+    img{
+      border-radius: 10px;
+    }
+  }
+
   // .team__flex
 
   &__flex {
@@ -27,6 +33,12 @@
     position: relative;
     z-index: 10;
     transition: all 0.8s ease-in-out;
+
+    box-shadow: 2px 2px 9px #91009d;
+    border-radius: 10px;
+    background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
+      linear-gradient(45deg, #86affe, #a57aff, #fb84ff) border-box;
+    border: 1px solid transparent;
     &._hidein {
       opacity: 0;
       visibility: hidden;
@@ -41,12 +53,11 @@
       height: auto;
     }
   }
-  &__swiper{
-    @media(min-width: 1368px){
+  &__swiper {
+    @media (min-width: 1368px) {
       display: none !important;
     }
   }
-
 
   &__swiper-button-prev,
   &__swiper-button-next {
@@ -55,7 +66,7 @@
     position: absolute;
     top: 25%;
     z-index: 100;
-    @media(min-width: 1368px){
+    @media (min-width: 1368px) {
       display: none;
     }
     @media (max-width: $md2+px) {
@@ -79,15 +90,14 @@
   &__swiper-button-next {
     right: 0;
     &::after {
-        content: "";
-        background: url("../img/first-page/team/next.svg");
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 35px;
-        height: 45px;
+      content: "";
+      background: url("../img/first-page/team/next.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 35px;
+      height: 45px;
     }
   }
-
 
   // .team__card-title
 
@@ -153,7 +163,7 @@
     font-size: 22px;
     line-height: 27px;
   }
-  &__swiper-container{
+  &__swiper-container {
     padding: 0 52px;
     position: relative;
     @media (max-width: $md3+px) {
@@ -163,7 +173,6 @@
       padding: 0 52px;
     }
   }
-
 }
 ._icon-instagram {
   @media (max-width: $md4+px) {
@@ -212,19 +221,15 @@
   }
 }
 
-
-.swiper-button-disabled{
+.swiper-button-disabled {
   opacity: 0.4;
 }
 
-
-.marqee__container{
+.marqee__container {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.marquee__block{
+.marquee__block {
   margin-top: 77px;
 }
-
-
