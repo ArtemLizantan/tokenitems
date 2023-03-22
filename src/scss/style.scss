@@ -6,10 +6,10 @@
   @media (max-width: 1200px) {
     margin-top: 80px;
   }
-}
-
-section {
-  margin-bottom: 100px;
+  @media (max-width: 480px) {
+    margin-bottom: 100px;
+    margin-top: 65px;
+  }
 }
 
 //<МИКСИНЫ>===============================================================================================
@@ -48,7 +48,6 @@ $bigcontainer: 1920;
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
-
 
 body {
   font-family: $Montserrat;
@@ -103,21 +102,38 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-
+@import "prelouder";
 @import "header";
 @import "footer";
 @import "burger";
+
 @import "first-page/hero";
-@import "first-page/card";
 @import "first-page/team";
 @import "first-page/play";
 @import "first-page/grant";
 @import "first-page/nft";
-@import "first-page/asked-one";
 @import "first-page/social";
+
+@import "first-page/asked-one";
+@import "thirty-page/asked-two";
+
 @import "first-page/contact";
+@import "second-page/contact2";
+
+@import "first-page/card";
 @import "second-page/card2";
+@import "thirty-page/card3";
+
 @import "second-page/hero-second";
+@import "thirty-page/hero-thirty";
+
+@import "second-page/tokenomic";
+
+@import "second-page/roadmap";
+
+@import "thirty-page/roadmap-three";
+
+@import "thirty-page/submit";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 

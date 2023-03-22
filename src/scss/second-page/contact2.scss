@@ -1,0 +1,24 @@
+.second-contact{
+    margin-top: 0;
+    position: relative;
+    &__bg{
+        @media (max-width: 1280px) {
+         display: none;
+        }
+      }
+      &__bg-one {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &__bg-two {
+        position: absolute;
+        right: 0;
+      }
+    @media(max-width: 1280px){
+        margin-top: 130px;
+    }
+    @media(max-width: $md2+px){
+        margin-top: 150px;
+    }
+}

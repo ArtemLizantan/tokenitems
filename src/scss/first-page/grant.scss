@@ -1,4 +1,27 @@
 .grant {
+  margin-top: 100px;
+  position: relative;
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: 1280px) {
+      z-index: 1;
+    }
+    img {
+      @media (max-width: 1280px) {
+        z-index: 1;
+        width: 100%;
+      }
+      @media (max-width: $md4+px) {
+        width: 200px;
+      }
+    }
+  }
+  @media (max-width: $md2+px) {
+    margin-top: 100px;
+  }
   &__title {
     span {
       background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
@@ -16,25 +39,24 @@
   &__button {
     border-radius: 60px 0;
     transition: all 0.4s ease;
-    @media(min-width:$md2+px){
-        &:hover{
-            background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
-          }
+    @media (min-width: $md2+px) {
+      &:hover {
+        background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+      }
     }
     &:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 60px 0;
-        padding: 10px;
-        border: 3px solid transparent;
-        color: #fff;
-        background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
-        -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-          linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-      }
-    
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 60px 0;
+      padding: 10px;
+      border: 3px solid transparent;
+      color: #fff;
+      background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
   }
 }

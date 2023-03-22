@@ -11,14 +11,10 @@
 		"deploy": "gulp deployFTP --build",
 		"svgSprive": "gulp svgSpriteTask"
 	},
-	"author": "FLS",
+	"author": "Artem Lizantan",
 	"license": "ISC",
 	"dependencies": {
-		"bootstrap": "^5.2.0-beta1",
-		"countup.js": "^2.3.2",
-		"gulp-cli": "^2.3.0",
-		"jquery": "^3.6.1",
-		"slick-carousel": "^1.8.1"
+		"gulp-cli": "^2.3.0"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
@@ -30,7 +26,7 @@
 		"gulp-fonter-fix": "latest",
 		"gulp-group-css-media-queries": "latest",
 		"gulp-if": "latest",
-		"gulp-imagemin": "latest",
+		"gulp-imagemin": "^8.0.0",
 		"gulp-inject": "^5.0.5",
 		"gulp-newer": "latest",
 		"gulp-notify": "latest",
@@ -43,7 +39,7 @@
 		"gulp-ttf2woff2": "latest",
 		"gulp-util": "latest",
 		"gulp-version-number": "latest",
-		"gulp-webp": "latest",
+		"gulp-webp": "^4.0.1",
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",

@@ -1,6 +1,7 @@
 .second-card{
     position: relative;
-    top: -50px;
+    top: -71px;
+    margin-top: 0;
     &__item{
         width: 480px;
         height: 283px;
@@ -9,8 +10,8 @@
             height: 215px;
         }
         @media(max-width:$md4+px){
-            width: 238px;
-            height: 219px;
+            width: 90%;
+            height: auto;
         }
     }
     &__body{
@@ -21,11 +22,6 @@
         @media(max-width: $md2+px){
            width: 60px;
            height: 60px;
-        }
-    }
-    &__text{
-        @media(max-width: $md2+px){
-            font-size: 12px;
         }
     }
     &__swiper{

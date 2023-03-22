@@ -15,4 +15,4 @@ function burger() {
   });
 }
 
-burger()
+burger();

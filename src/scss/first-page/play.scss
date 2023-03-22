@@ -1,8 +1,31 @@
-.categories {
-  //   background: url(../../img/first-page/play/Ellipse.svg);
-  //   background-repeat: no-repeat;
-  //   z-index: 2;
+.play{
+  &__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: 1280px) {
+      z-index: 1;
+    }
+    img{
+      @media (max-width: 1280px) {
+        z-index: 1;
+        width: 100%;
+      }
+      @media (max-width: $md4+px) {
+        width: 200px;
+      }
+    }
+  }
+}
 
+.categories {
+  margin-top: 193px;
+  position: relative;
+ 
+  @media (max-width: $md2+px) {
+    margin-top: 100px;
+  }
   &__body {
   }
 
@@ -56,12 +79,17 @@
     @media (max-width: $md2+px) {
       width: 100%;
       padding-left: 0;
+      font-size: 45px;
+    }
+    @media (max-width: $md3+px) {
+      line-height: 80px;
     }
     @media (max-width: $md4+px) {
       font-size: 30px;
       line-height: 50px;
+      width: 98%;
+      margin: 0 auto;
     }
-    
   }
 
   // categories__subtitle
@@ -71,6 +99,12 @@
     gap: 40px;
     width: 50%;
     @media (max-width: $md2+px) {
+      width: 100%;
+    }
+    @media (max-width: $md3+px) {
+      width: 75%;
+    }
+    @media (max-width: $md4+px) {
       width: 100%;
     }
   }
@@ -86,6 +120,7 @@
     @media (max-width: $md2+px) {
       width: 100%;
       padding-left: 0;
+      font-size: 16px;
     }
     @media (max-width: $md4+px) {
       font-size: 13px;
@@ -141,6 +176,12 @@
   // categories__img
 
   &__img {
+    @media(max-width: $md3+px){
+      width: 575px;
+    }
+    @media(max-width: $md4+px){
+      width: 375px;
+    }
   }
 
   &__left-bottom {
@@ -152,6 +193,9 @@
       flex-direction: column;
       align-items: center;
       gap: 30px;
+    }
+    @media (max-width: $md2+px) {
+      margin-top: unset;
     }
   }
   &__line-wrapper {
@@ -202,12 +246,23 @@
     top: 0;
     right: 0;
     font-size: 70px;
+    @media (max-width: 1280px) {
+      right: -35px;
+    }
+    @media (max-width: $md4+px) {
+      right: 0;
+      font-size: 40px;
+    }
   }
-
+  @media (max-width: $md2+px) {
+    &::before {
+      font-size: 30px;
+    }
   @media (max-width: $md4+px) {
     &::before {
-      font-size: 11px;
+      font-size: 40px;
     }
+  }
   }
 }
 ._icon-left-first {
@@ -220,12 +275,13 @@
   @media (max-width: $md2+px) {
     &::after {
       bottom: 0;
+      font-size: 30px;
     }
   }
 
   @media (max-width: $md4+px) {
     &::after {
-      font-size: 11px;
+      font-size: 40px;
       bottom: 0;
     }
   }

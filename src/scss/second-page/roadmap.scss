@@ -1,0 +1,229 @@
+.roadmap {
+  margin-top: 194px;
+  position: relative;
+  @media (max-width: $md4+px) {
+    margin-top: 100px;
+  }
+  &__bg{
+  }
+  &__bg-one {
+    position: absolute;
+    left: 0;
+    width: 600px;
+  }
+  &__bg-two {
+    position: absolute;
+    right: 0;
+    width: 600px;
+  }
+  // .roadmap__body
+
+  &__body {
+    position: relative;
+    height: 2845px;
+    @media (max-width: 1280px) {
+      height: auto;
+    }
+  }
+  &__wrap {
+    text-align: center;
+  }
+
+  // .roadmap__wrapper
+
+  &__wrapper-flex {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    // @media(max-width: $md2+px){
+    //     justify-content: center;
+    // }
+  }
+
+  &__wrapper-flex:nth-child(even) {
+    flex-direction: row-reverse;
+    @media (max-width: 1280px) {
+      flex-direction: unset;
+    }
+  }
+
+  // .roadmap__item
+
+  &__item {
+    width: 40%;
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
+      linear-gradient(to right, #ffb78f, #db73ff) border-box;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 9px #91009d;
+    @media (max-width: $md2+px) {
+      width: 60%;
+    }
+    @media (max-width: $md4+px) {
+      width: 70%;
+    }
+  }
+
+  &__list-item {
+    padding: 30px 187px 30px 50px;
+    @media (max-width: $md4+px) {
+      padding: 10px;
+    }
+    &:first-child {
+      border-radius: 30px 30px 0 0;
+    }
+    &:not(:last-child) {
+      background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
+        linear-gradient(45deg, #ffb78f, #db73ff) border-box;
+      border-bottom: 2px solid transparent;
+    }
+  }
+
+  // .roadmap__content
+
+  &__content {
+  }
+
+  // .roadmap__title
+
+  &__title {
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 48px;
+    letter-spacing: 0.11em;
+    color: #ffffff;
+    text-transform: uppercase;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
+    @media(max-width: $md2+px){
+      font-size: 25px;
+   }
+    @media (max-width: $md4+px) {
+      font-size: 15px;
+    }
+  }
+
+  // .roadmap__subtitle
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    @media (max-width: 1280px) {
+      font-size: 15px;
+    }
+    @media (max-width: $md4+px) {
+      font-size: 11px;
+    }
+  }
+
+  &__step {
+    position: relative;
+    margin-right: 28px;
+    margin-top: 50px;
+  }
+  &__step-left {
+    margin-right: none;
+    margin-left: 28px;
+  }
+  &__step-item {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__step-item-left {
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50px;
+    left: 696px;
+    @media (max-width: 1550px) {
+      left: 642px;
+    }
+    @media (max-width: 1400px) {
+      left: 580px;
+    }
+    @media (max-width: 1282px) {
+      display: none;
+    }
+  }
+  &__img-mobile {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 105px;
+    @media (min-width: 1281px) {
+        display: none;
+      }
+    @media (max-width: $md2+px) {
+      width: 104px;
+      left: -115px;
+    }
+    @media (max-width: $md3+px) {
+      width: 104px;
+      left: unset;
+    }
+    @media (max-width: $md4+px) {
+      width: 74px;
+      top: 27px;
+    }
+    @media (max-width: 376px) {
+      width: 80px;
+      top: 27px;
+    }
+  }
+  &__wrapper-line {
+    position: relative;
+    margin-top: 120px;
+    @media (max-width: $md4+px) {
+     margin-top: 70px;
+    }
+  }
+
+  &__wrapper-flex-three {
+    position: relative;
+    top: -68px;
+    @media (max-width: 1280px) {
+      position: static;
+    }
+  }
+  &__wrapper-flex-four {
+    position: relative;
+    top: -200px;
+    @media (max-width: 1280px) {
+      position: static;
+    }
+  }
+  &__wrapper-flex-five {
+    position: relative;
+    top: -295px;
+    @media (max-width: 1280px) {
+      position: static;
+    }
+  }
+  &__wrapper-flex-six {
+    position: relative;
+    top: -452px;
+    @media (max-width: 1280px) {
+      position: static;
+    }
+  }
+  &__wrapper-flex-seven {
+    position: relative;
+    top: -485px;
+    @media (max-width: 1280px) {
+      position: static;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 .hero {
+  margin-top:63px;
   @media (max-width: $md2+px) {
-    margin-top: 20px;
-  }
+    margin-top: 100px;
+    }
   &__body {
     display: flex;
     justify-content: space-between;
@@ -31,6 +32,10 @@
     @media (max-width: 1280px) {
       text-align: center;
     }
+    @media(max-width: $md2+px){
+    font-size: 70px;
+    line-height: 90px;
+    }
     @media (max-width: $md4+px) {
       font-size: 55px;
       line-height: 72px;
@@ -46,6 +51,9 @@
       text-align: center;
       max-width: unset;
     }
+    @media(max-width: $md2+px){
+      font-size: 30px;
+      }
     @media (max-width: $md4+px) {
       font-size: 22px;
       line-height: 27px;
@@ -60,7 +68,11 @@
     max-width: 810px;
     @media (max-width: 1280px) {
       text-align: center;
+      max-width: unset;
     }
+    @media(max-width: $md2+px){
+      font-size: 25px;
+      }
     @media (max-width: $md4+px) {
       font-size: 20px;
       line-height: 24px;
@@ -86,11 +98,18 @@
     @media (max-width: 1280px) {
       margin: 0 auto;
     }
+    @media(max-width: $md2+px){
+      text-align: center;
+    }
     @media(max-width: $md4+px){
       width: 256px;
     }
   }
   &__rigth-img {
     width: 645px;
+    @media(max-width: $md2+px){
+      width: 400px;
+      margin: 0 auto;
+    }
   }
 }

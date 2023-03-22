@@ -31,6 +31,10 @@ function blogSwiper() {
         slidesPerView: 2,
         spaceBetween: 40,
       },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 7,
+      },
       1368: {
         slidesPerView: 3,
         spaceBetween: 7,
@@ -102,6 +106,9 @@ function teamSwiper() {
         768:{
             slidesPerView: 2,
         },
+        1280:{
+          slidesPerView: 3,
+      },
         1368:{
             slidesPerView: 4,
         }

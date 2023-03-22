@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="stylesheet" href="iconsFont.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet"
@@ -16,6 +14,12 @@
 </head>
 
 	<body>
+		<div id="preloader" class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
 		<header class="header">
   <div class="_container header__container">
     <div class="header__body">
@@ -41,7 +45,7 @@
                 <a class="menu__list-link" href="token.html">Token</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Fund</a>
+                <a class="menu__list-link" href="fund.html">Fund</a>
               </li>
             </ul>
             <div class="header__dropdown dropdown">
@@ -83,6 +87,66 @@
                     <div class="hero__button--first">Contact Us</div>
                     <div class="hero__button--second">Buy Token</div>
                 </div>
+                <marquee class="marquee-mobile" width="100%" scrollamount="20" direction="left" height="100%">
+                    <div class="partners__wrapper">
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/inch_logo.png"
+                            alt="1inch-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/bsc_logo.png"
+                            alt="bsc-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/coingecko_logo.png"
+                            alt="coingecko-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/coinmarketcap_logo.png"
+                            alt="coinmarketcap-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/metamask_logo.png"
+                            alt="metamask-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/pancakeswap_logo.png"
+                            alt="pancakeswap-logo"
+                          />
+                        </a>
+                      </div>
+                      <div class="partners__item">
+                        <a href="#" class="partners__link">
+                          <img
+                            src="img/first-page/team/marquee/trustwallet_logo.png"
+                            alt="trustwallet-logo"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </marquee>
             </div>
             <div class="hero__rigth">
                 <img class="hero__rigth-img" src="img/first-page/hero/coin1.svg" alt="">
@@ -129,7 +193,7 @@
                 Discover the world of unique and exclusive NFT with the new
                 Finity Touch trading platform
               </p>
-              <a href="#" class="card__more ">More</a>
+              <a href="#" class="card__more">More</a>
             </div>
           </div>
         </div>
@@ -182,45 +246,7 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <div class="card__item">
-                <div class="card__body">
-                  <div class="card__image">
-                    <img
-                      class="card__img"
-                      src="img/first-page/card/marketplace.svg"
-                      alt=""
-                    />
-                  </div>
-                  <h3 class="card__title">Marketplace</h3>
-                  <p class="card__text">
-                    Discover the world of unique and exclusive NFT with the new
-                    Finity Touch trading platform
-                  </p>
-                  <a href="#" class="card__more">More</a>
-                </div>
-              </div>
-        </div>
-        <div class="swiper-slide">
           <div class="card__item">
-              <div class="card__body">
-                <div class="card__image">
-                  <img
-                    class="card__img"
-                    src="img/first-page/card/marketplace.svg"
-                    alt=""
-                  />
-                </div>
-                <h3 class="card__title">Marketplace</h3>
-                <p class="card__text">
-                  Discover the world of unique and exclusive NFT with the new
-                  Finity Touch trading platform
-                </p>
-                <a href="#" class="card__more">More</a>
-              </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card__item">
             <div class="card__body">
               <div class="card__image">
                 <img
@@ -237,33 +263,71 @@
               <a href="#" class="card__more">More</a>
             </div>
           </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="card__item">
-          <div class="card__body">
-            <div class="card__image">
-              <img
-                class="card__img"
-                src="img/first-page/card/marketplace.svg"
-                alt=""
-              />
+        </div>
+        <div class="swiper-slide">
+          <div class="card__item">
+            <div class="card__body">
+              <div class="card__image">
+                <img
+                  class="card__img"
+                  src="img/first-page/card/marketplace.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="card__title">Marketplace</h3>
+              <p class="card__text">
+                Discover the world of unique and exclusive NFT with the new
+                Finity Touch trading platform
+              </p>
+              <a href="#" class="card__more">More</a>
             </div>
-            <h3 class="card__title">Marketplace</h3>
-            <p class="card__text">
-              Discover the world of unique and exclusive NFT with the new
-              Finity Touch trading platform
-            </p>
-            <a href="#" class="card__more">More</a>
           </div>
         </div>
-  </div>
-    
+        <div class="swiper-slide">
+          <div class="card__item">
+            <div class="card__body">
+              <div class="card__image">
+                <img
+                  class="card__img"
+                  src="img/first-page/card/marketplace.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="card__title">Marketplace</h3>
+              <p class="card__text">
+                Discover the world of unique and exclusive NFT with the new
+                Finity Touch trading platform
+              </p>
+              <a href="#" class="card__more">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card__item">
+            <div class="card__body">
+              <div class="card__image">
+                <img
+                  class="card__img"
+                  src="img/first-page/card/marketplace.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="card__title">Marketplace</h3>
+              <p class="card__text">
+                Discover the world of unique and exclusive NFT with the new
+                Finity Touch trading platform
+              </p>
+              <a href="#" class="card__more">More</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 			<section class="categories grant">
+  <div class="grant__bg"><img src="img/first-page/grant/bg.svg" alt=""></div>
   <div class="_container">
     <div class="categories__body">
       <div class="categories__flex grant__flex">
@@ -297,6 +361,7 @@
 </section>
 
 			<section class="categories play">
+  <div class="play__bg"><img src="img/first-page/play/bg.svg" alt=""></div>
   <div class="_container">
     <div class="categories__body">
       <div class="categories__flex">
@@ -339,6 +404,7 @@
 </section>
 
 			<section class="categories nft">
+  <div class="grant__bg"><img src="img/first-page/grant/bg.svg" alt=""></div>
     <div class="_container">
       <div class="categories__body">
         <div class="categories__flex grant__flex">
@@ -372,6 +438,10 @@
   </section>
   
 			<section class="team">
+  <div class="team__bg">
+    <img class="team__bg-one" src="img/first-page/team/bg1.svg" alt="" />
+    <img class="team__bg-two" src="img/first-page/team/bg2.svg" alt="" />
+  </div>
   <div class="card__main-title">Our Team</div>
   <div class="_container">
     <div class="team__body">
@@ -896,9 +966,72 @@
     </div>
   </div>
   <div class="_container">
-    <div class="marquee__block">
-      <img class="marquee__img" src="img/first-page/team/marquee.svg" alt="" />
-    </div>
+    <marquee
+      class="marquee"
+      width="100%"
+      scrollamount="20"
+      direction="left"
+      height="100%"
+    >
+      <div class="partners__wrapper">
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/inch_logo.png"
+              alt="1inch-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/bsc_logo.png"
+              alt="bsc-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/coingecko_logo.png"
+              alt="coingecko-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/coinmarketcap_logo.png"
+              alt="coinmarketcap-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/metamask_logo.png"
+              alt="metamask-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/pancakeswap_logo.png"
+              alt="pancakeswap-logo"
+            />
+          </a>
+        </div>
+        <div class="partners__item">
+          <a href="#" class="partners__link">
+            <img
+              src="img/first-page/team/marquee/trustwallet_logo.png"
+              alt="trustwallet-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </marquee>
   </div>
 </section>
 
@@ -906,7 +1039,7 @@
   <div class="_container">
     <div class="asked__body">
       <div class="asked__flex">
-        <div class="asked__left  wow animate__animated animate__backInLeft">
+        <div class="asked__left ">
           <h2 class="asked__left-title">Frequently Asked Questions</h2>
           <img
             class="asked__img"
@@ -914,7 +1047,15 @@
             alt=""
           />
         </div>
-        <div class="asked__rigth harmonic  wow animate__animated animate__fadeInRight">
+        <div class="asked__rigth harmonic">
+          <div class="harmonic__body">
+            <div class="harmonic__title">What is Finity Touch?</div>
+            <div class="harmonic__content">
+              <p class="harmonic__subtitle">
+                15% of the issue of Finity tokens is used as a monetary fund for the implementation of your ideas.
+              </p>
+            </div>
+          </div>
           <div class="harmonic__body">
             <div class="harmonic__title">What is Finity Touch?</div>
             <div class="harmonic__content">
@@ -947,7 +1088,7 @@
 
 			<section class="social social-section">
   <div class="container social__container">
-    <h3 class="social__title title-s">Follow Us On Social Media</h3>
+    <h3 class="contact__title social__title">Follow Us On Social Media</h3>
 
     <div class="social__bg">
       <div class="social__bg-wrap">
@@ -1024,6 +1165,10 @@
 </section>
 
 			<section class="contact">
+  <div class="contact__bg">
+    <img class="contact__bg-one" src="img/first-page/contact/bg1.svg" alt="" />
+    <img class="contact__bg-two" src="img/first-page/contact/bg2.svg" alt="" />
+  </div>
   <div class="_container">
     <div class="contact__body">
       <div class="contact__title">Contact Us</div>
